@@ -1,0 +1,179 @@
+@import "/css/normalize.css";
+/*
+Created on : 6/2/2015
+Author     : Jonathan Harmon
+Purpose    : Style The Character Sheet Form
+*/
+
+.error{
+    color:red;
+}
+
+label{
+    float:left;
+    width: 120px;
+}
+
+.infoform{
+    width: 200px;
+}
+
+nav>div{
+    background-color: #1D1D1A;
+    background-image: linear-gradient(#1D1D1A, black);
+    color: #E4E7FF;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+
+}
+
+nav button{
+    
+}
+
+#diceArea{
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    border: black 5px;
+    min-width: 300px;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+#diceAreaInner{
+    margin: 10px;
+}
+
+#diceAreaInner td{
+    width: 15%;
+}
+
+#diceAreaInner td input{
+    width: 100%;
+}
+#diceAreaInner input{
+
+    color: black;
+
+}
+
+nav>div a{
+    color: #E4E7FF;
+    text-decoration: none;
+}
+
+nav>div{
+    text-align: right;
+}
+
+.welcome{
+    float:left;
+}
+
+
+nav>div a:hover{
+    color: black;
+    background-color: white;
+}
+
+nav>div ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 3% 3% 3% 0%;
+}
+
+nav>div li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.navButton{
+    color: #E4E7FF;
+    text-decoration: none;
+    border: #1D1D1A;
+    background: none;
+}
+
+.navButton:hover{
+    color: black;
+    background-color: white;
+}
+
+footer>div{
+    background-color: #1D1D1A;
+    background-image: linear-gradient(#1D1D1A, black);
+    color: #E4E7FF;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+
+}
+
+footer>div a{
+    color: #E4E7FF;
+    text-decoration: none;
+}
+
+footer>div a:hover{
+    color: black;
+    background-color: white;
+}
+
+footer>div ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 3%;
+}
+
+footer>div li{
+    display: inline;
+    padding: 5px;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+}
+
+header td{
+}
+
+label,input{
+    margin: 2px;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16px; 
+    font-size: 1em; 
+    color: #E4E7FF;
+    background-color: #1D1D1A;
+    background-image: linear-gradient(to top right, #000, #1D1D1A, #000);
+    padding: 0;
+    margin-top: 2em;
+}
+
+body>div{
+    color: black;
+    background-color: white;
+    width: 95%;
+    margin: 0 auto;
+    border: 5px solid #000;
+    border-radius: 10px;
+    min-width: 20em;
+}
+
+main{
+    margin: 2%;
+}
+
+header{
+    margin: 2%;
+}

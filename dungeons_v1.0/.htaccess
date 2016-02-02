@@ -1,0 +1,11 @@
+# disable directory listing
+Options -Indexes
+
+RewriteEngine on
+#For production server
+RewriteCond %{HTTP_HOST} ^dungeoncompanion.net$ [NC,OR]
+#For local development server
+RewriteCond %{HTTP_HOST} ^dungeons.localhost$ [NC]
+#Send to the public folder
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]

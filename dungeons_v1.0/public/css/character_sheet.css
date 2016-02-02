@@ -1,0 +1,1141 @@
+@import "/css/normalize.css";
+/*
+Created on : 5/28/2015
+Author     : Jonathan Harmon
+Purpose    : Style The Character Sheet Form
+*/
+
+
+.navButton{
+    color: #E4E7FF;
+    text-decoration: none;
+    border: #1D1D1A;
+    background: none;
+    opacity: 1;
+}
+
+.navButton:hover{
+    color: black;
+    background-color: white;
+}
+
+#diceArea{
+    position: absolute;
+    left: 50%;
+    //height: 50%;
+    width: 40%;
+    border: black 5px;
+    min-width: 300px;
+    margin-left: -150px;
+    z-index: 2;
+}
+
+#diceArea input{
+    opacity: 1;
+}
+
+#diceAreaInner{
+    margin: 10px;
+    
+}
+
+#diceAreaInner td{
+    width: 15%;
+}
+
+#diceAreaInner td input{
+    width: 100%;
+}
+#diceAreaInner input{
+    
+    color: black;
+    
+}
+
+nav>div{
+    background-color: #1D1D1A;
+    background-image: linear-gradient(#1D1D1A, black);
+    color: #E4E7FF;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+
+}
+
+nav>div{
+    text-align: right;
+}
+
+.welcome{
+    float:left;
+}
+
+nav>div a{
+    color: #E4E7FF;
+    text-decoration: none;
+}
+
+nav>div a:hover{
+    color: black;
+    background-color: white;
+}
+
+nav>div ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 3% 3% 3% 0%;
+}
+
+nav>div li{
+    display: inline-block;
+    padding: 5px;
+}
+
+footer>div{
+    background-color: #1D1D1A;
+    background-image: linear-gradient(#1D1D1A, black);
+    color: #E4E7FF;
+    border: 5px solid #FFF;
+    border-radius: 10px;
+
+}
+
+footer>div a{
+    color: #E4E7FF;
+    text-decoration: none;
+}
+
+footer>div a:hover{
+    color: black;
+    background-color: white;
+}
+
+footer>div ul{
+    text-align: right;
+    list-style-type: none;
+    margin: 3%;
+}
+
+footer>div li{
+    display: inline;
+    padding: 5px;
+}
+
+header img{
+    width: 100%;
+}
+
+header h1{
+    text-align: center;
+}
+
+header td{
+    //width: 50%;
+}
+
+header{
+
+}
+
+main{
+    position: relative;
+}
+main img{
+    width: 1300px;
+    //visibility: hidden;
+    z-index: -1;
+    position: relative;
+}
+
+
+.submit{
+    position: absolute;
+    top: 0px;
+    left: 42%;
+}
+
+.message{
+    //position: absolute;
+}
+
+input{
+    opacity: .75;
+    max-width: 100%;
+}
+
+
+.character_sheet{
+    width: 1300px;
+}
+
+.character_sheet input{
+    position: absolute;
+}
+
+
+.character_name{
+    top: 140px;
+    left: 100px;
+    width: 400px;
+}
+.character_class{
+    top: 110px;
+    left: 574px;
+    width: 150px;
+}
+
+.level{
+    top: 110px;
+    left: 730px;
+    width: 50px;
+}
+
+.background{
+    top: 110px;
+    left: 806px;
+    width: 200px;
+}
+
+.player_name{
+    top: 110px;
+    left: 1017px;
+    width: 200px;
+}
+
+.race{
+    top: 165px;
+    left: 574px;
+    width: 205px;
+}
+
+.alignment{
+    top: 165px;
+    left: 806px;
+    width: 200px;
+}
+
+.experience{
+    top: 165px;
+    left: 1017px;
+    width: 200px;
+}
+
+.attributes{
+    position: absolute;
+    top: 301px;
+    left: 66px;
+    width: 114px;
+    height: 893px;
+}
+
+.attribute{
+    height: 60px;
+    left: 8px;
+    width: 95px;
+    text-align: center;
+font-size: 2em;
+}
+
+.strength{
+    top: 25px;
+}
+
+.dexterity{
+    top: 176px;
+}
+
+.constitution{
+    top: 328px;
+}
+
+.intelligence{
+    top: 481px;
+}
+
+.wisdom{
+    top: 634px;
+}
+
+.charisma{
+    top: 785px;
+}
+
+.modifiers{
+    position: absolute;
+    top: 389px;
+    left: 94px;
+    width: 55px;
+    height: 801px;
+}
+
+.modifier{
+    left: 6px;
+    width: 43px;
+    height: 24px;
+    text-align: center;
+}
+
+.strength_modifier{
+    top: 9px;
+}
+
+.dexterity_modifier{
+    top: 161px;
+}
+
+.constitution_modifier{
+    top: 312px;
+}
+
+.intelligence_modifier{
+    top: 465px;
+}
+
+.wisdom_modifier{
+    top: 617px;
+}
+
+.charisma_modifier{
+    top: 768px;
+}
+
+.inspiration_and_proficiency{
+    position: absolute;
+    top: 268px;
+    left: 198px;
+    width: 69px;
+    height: 144px;
+}
+
+.inspiration{
+    width: 52px;
+    height: 40px;
+    top: 9px;
+    left: 4px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.proficiency_bonus{
+    width: 42px;
+    height: 40px;
+    top: 88px;
+    left: 12px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.has_boxes_div{
+    position: absolute;
+    top: 427px;
+    left: 212px;
+    height: 767px;
+    width: 20px;
+}
+
+.has_boxes{
+    left: 3px;
+}
+
+.has_strength_throw{
+    top: 15px;
+}
+
+.has_dexterity_throw{
+    top: 44px;
+}
+
+.has_constitution_throw{
+    top: 72px;
+}
+
+.has_intelligence_throw{
+    top: 101px;
+}
+
+.has_wisdom_throw{
+    top: 130px;
+}
+
+.has_charisma_throw{
+    top: 158px;
+}
+
+.has_acrobatics{
+    top: 260px;
+}
+
+.has_animal_handling{
+    top: 289px;
+}
+.has_arcana{
+    top: 317px;
+}
+.has_athletics{
+    top: 346px;
+}
+.has_deception{
+    top: 375px;
+}
+.has_history{
+    top: 403px;
+}
+.has_insight{
+    top: 432px;
+}
+.has_intimidation{
+    top: 461px;
+}
+.has_investigation{
+    top: 489px;
+}
+.has_medicine{
+    top: 518px;
+}
+.has_nature{
+    top: 547px;
+}
+.has_perception{
+    top: 575px;
+}
+.has_performance{
+    top: 604px;
+}
+.has_persuasion{
+    top: 633px;
+}
+.has_religion{
+    top: 661px;
+}
+.has_sleight_of_hand{
+    top: 690px;
+}
+.has_stealth{
+    top: 719px;
+}
+.has_survival{
+    top: 747px;
+}
+
+.throws_and_skills_div{
+    height: 766px;
+    width: 35px;
+    position: absolute;
+    top: 428px;
+    left: 237px;
+}
+
+.throws_and_skills{
+    left: 0px;
+    width: 36px;
+    height: 22px;
+}
+
+.strength_throw_value{
+    top: 9px;
+}
+
+.dexterity_throw_value{
+    top: 38px;
+}
+
+.constitution_throw_value{
+    top: 66px;
+}
+
+.intelligence_throw_value{
+    top: 95px;
+}
+
+.wisdom_throw_value{
+    top: 123px;
+}
+
+.charisma_throw_value{
+    top: 152px;
+}
+
+
+.acrobatics_value{
+    top: 253px;
+}
+
+
+
+.animal_handling_value{
+    top: 282px;
+}
+
+
+
+.arcana_value{
+    top: 311px;
+}
+
+
+
+.athletics_value{
+    top: 340px;
+}
+
+
+
+.deception_value{
+    top: 368px;
+}
+
+
+
+.history_value{
+    top: 397px;
+}
+
+
+
+.insight_value{
+    top: 426px;
+}
+
+
+
+.intimidation_value{
+    top: 454px;
+}
+
+
+
+.investigation_value{
+    top: 483px;
+}
+
+
+
+.medicine_value{
+    top: 512px;
+}
+
+
+
+.nature_value{
+    top: 540px;
+}
+
+
+
+.perception_value{
+    top: 569px;
+}
+
+
+
+.performance_value{
+    top: 598px;
+}
+
+
+
+.persuasion_value{
+    top: 626px;
+}
+
+
+
+.religion_value{
+    top: 655px;
+}
+
+
+
+.sleight_of_hand_value{
+    top: 684px;
+}
+
+
+
+.stealth_value{
+    top: 712px;
+}
+
+
+
+.survival_value{
+    top: 741px;
+}
+
+.passive_wisdom{
+    top: 1254px;
+    left: 71px;
+    width: 41px;
+    height: 38px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.proficiencies_div{
+    position: absolute;
+    height: 305px;
+    width: 369px;
+    top: 1323px;
+    left: 65px;
+}
+
+.proficiencies{
+    left: 1px;
+    height: 23px;
+    width: 365px;
+}
+
+.proficiencies1{
+    top: 2px;
+}
+
+.proficiencies2{
+    top: 26px;
+}
+
+.proficiencies3{
+    top: 50px;
+}
+
+.proficiencies4{
+    top: 73px;
+}
+
+.proficiencies5{
+    top: 96px;
+}
+
+.proficiencies6{
+    top: 119px;
+}
+
+.proficiencies7{
+    top: 142px;
+}
+
+.proficiencies8{
+    top: 165px;
+}
+
+.proficiencies9{
+    top: 189px;
+}
+
+.proficiencies10{
+    top: 212px;
+}
+
+.proficiencies11{
+    top: 236px;
+}
+
+.proficiencies12{
+    top: 259px;
+}
+
+.top_middle_div{
+    position: absolute;
+    width: 381px;
+    height: 523px;
+    top: 268px;
+    left: 460px;
+}
+
+.armor_class{
+    top: 42px;
+    left: 34px;
+    width: 62px;
+    height: 44px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.initiative{
+    top: 34px;
+    left: 152px;
+    width: 67px;
+    height: 65px;
+    text-align: center;
+    font-size: 2em;
+}
+.speed{
+    top: 34px;
+    left: 276px;
+    width: 67px;
+    height: 65px;
+    text-align: center;
+    font-size: 2em;
+}
+.hit_points_maximum{
+    top: 149px;
+    left: 157px;
+    width: 192px;
+    height: 24px;
+    text-align: center;
+}
+.hit_points_current{
+    top: 182px;
+    left: 29px;
+    width: 320px;
+    height: 63px;
+    text-align: center;
+    font-size: 2em;
+}
+.hit_points_temporary{
+    top: 294px;
+    left: 29px;
+    width: 320px;
+    height: 63px;
+    text-align: center;
+    font-size: 2em;
+}
+.hit_dice_total{
+    top: 409px;
+    left: 64px;
+    height: 21px;
+    width: 103px;
+}
+.hit_dice{
+    top: 434px;
+    left: 31px;
+    height: 47px;
+    width: 136px;
+}
+.death_save_success1{
+    top: 419px;
+    left: 278px;
+}
+.death_save_success2{
+    top: 419px;
+    left: 305px;
+}
+.death_save_success3{
+    top: 419px;
+    left: 333px;
+}
+.death_save_failure1{
+    top: 451px;
+    left: 278px;
+}
+.death_save_failure2{
+    top: 451px;
+    left: 305px;
+}
+.death_save_failure3{
+    top: 451px;
+    left: 333px;
+}
+
+.attack_div{
+    height: 422px;
+    width: 380px;
+    top: 808px;
+    position: absolute;
+    left: 460px;
+}
+
+.attack_name_1{
+    top: 26px;
+    left: 15px;
+    height: 30px;
+    width: 132px;
+}
+.attack_bonus_1{
+    top: 26px;
+    left: 160px;
+    height: 30px;
+    width: 63px;
+}
+.attack_type_1{
+    top: 26px;
+    left: 236px;
+    height: 30px;
+    width: 128px;
+}
+.attack_name_2{
+    top: 70px;
+    left: 15px;
+    height: 30px;
+    width: 132px;
+}
+.attack_bonus_2{
+    top: 70px;
+    left: 160px;
+    height: 30px;
+    width: 63px;
+}
+.attack_type_2{
+    top: 70px;
+    left: 236px;
+    height: 30px;
+    width: 128px;
+}
+.attack_name_3{
+    top: 114px;
+    left: 15px;
+    height: 30px;
+    width: 132px;
+}
+.attack_bonus_3{
+    top: 114px;
+    left: 160px;
+    height: 30px;
+    width: 63px;
+}
+.attack_type_3{
+    top: 114px;
+    left: 236px;
+    height: 30px;
+    width: 128px;
+}
+.attack_other1{
+    top: 167px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other2{
+    top: 191px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other3{
+    top: 214px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other4{
+    top: 237px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other5{
+    top: 261px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other6{
+    top: 284px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other7{
+    top: 307px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other8{
+    top: 330px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other9{
+    top: 354px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+.attack_other10{
+    top: 377px;
+    left: 7px;
+    height: 23px;
+    width: 366px;
+}
+
+.equipment_div{
+    position: absolute;
+    width: 380px;
+    height: 379px;
+    top: 1250px;
+    left: 460px;
+}
+
+.equipment_cp{
+    top: 27px;
+    left: 26px;
+    width: 65px;
+    text-align: center;
+}
+.equipment_sp{
+    top: 82px;
+    left: 26px;
+    width: 65px;
+    text-align: center;
+}
+.equipment_ep{
+    top: 138px;
+    left: 26px;
+    width: 65px;
+    text-align: center;
+}
+.equipment_gp{
+    top: 192px;
+    left: 26px;
+    width: 65px;
+    text-align: center;
+}
+.equipment_pp{
+    top: 248px;
+    left: 26px;
+    width: 65px;
+    text-align: center;
+}
+.equipment_other1{
+    top: 29px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other2{
+    top: 52px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other3{
+    top: 75px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other4{
+    top: 98px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other5{
+    top: 122px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other6{
+    top: 145px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other7{
+    top: 169px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other8{
+    top: 192px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other9{
+    top: 216px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other10{
+    top: 239px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other11{
+    top: 262px;
+    left: 106px;
+    height: 22px;
+    width: 266px;
+}
+.equipment_other12{
+    top: 285px;
+    left: 8px;
+    height: 22px;
+    width: 364px;
+}
+.equipment_other13{
+    top: 309px;
+    left: 8px;
+    height: 22px;
+    width: 364px;
+}
+.equipment_other14{
+    top: 332px;
+    left: 8px;
+    height: 22px;
+    width: 364px;
+}
+.top_right_div{
+    position: absolute;
+    left: 877px;
+    height: 489px;
+    width: 350px;
+    top: 287px;
+}
+
+.top_right{
+    height: 24px;
+    width: 337px;
+    left: 7px;
+}
+
+.personality_traits1{
+    top: 5px;
+}
+.personality_traits2{
+    top: 31px;
+}
+.personality_traits3{
+    top: 57px;
+}
+.personality_traits4{
+    top: 83px;
+}
+.ideals1{
+    top: 151px;
+}
+.ideals2{
+    top: 178px;
+}
+.ideals3{
+    top: 204px;
+}
+.bonds1{
+    top: 269px;
+}
+.bonds2{
+    top: 295px;
+}
+.bonds3{
+    top: 321px;
+}
+.flaws1{
+    top: 387px;
+}
+.flaws2{
+    top: 413px;
+}
+.flaws3{
+    top: 439px;
+}
+
+.features_div{
+    position: absolute;
+    height: 820px;
+    width: 382px;
+    top: 810px;
+    left: 860px;
+}
+
+.features{
+    left: 7px;
+    height: 23px;
+    width: 369px;
+}
+.features1{
+    top: 1px;
+}
+.features2{
+    top: 25px;
+}
+.features3{
+    top: 48px;
+}
+.features4{
+    top: 71px;
+}
+.features5{
+    top: 94px;
+}
+.features6{
+    top: 118px;
+}
+.features7{
+    top: 141px;
+}
+.features8{
+    top: 165px;
+}
+.features9{
+    top: 188px;
+}
+.features10{
+    top: 211px;
+}
+.features11{
+    top: 235px;
+}
+.features12{
+    top: 258px;
+}
+.features13{
+    top: 282px;
+}
+.features14{
+    top: 305px;
+}
+.features15{
+    top: 328px;
+}
+.features16{
+    top: 352px;
+}
+.features17{
+    top: 375px;
+}
+.features18{
+    top: 399px;
+}
+.features19{
+    top: 422px;
+}
+.features20{
+    top: 445px;
+}
+.features21{
+    top: 468px;
+}
+.features22{
+    top: 491px;
+}
+.features23{
+    top: 515px;
+}
+.features24{
+    top: 539px;
+}
+.features25{
+    top: 562px;
+}
+.features26{
+    top: 585px;
+}
+.features27{
+    top: 609px;
+}
+.features28{
+    top: 632px;
+}
+.features29{
+    top: 655px;
+}
+.features30{
+    top: 679px;
+}
+.features31{
+    top: 702px;
+}
+.features32{
+    top: 726px;
+}
+.features33{
+    top: 749px;
+}
+.features34{
+    top: 772px;
+}

@@ -1,0 +1,724 @@
+@import "/css/normalize.css?v2";
+@import "/css/main.css?v2";
+/*
+Created on : 5/28/2015
+Author     : Jonathan Harmon
+Purpose    : Style The Character Sheet Form
+*/
+
+main{
+    position: relative;
+    margin: 0;
+}
+
+label,input{
+    margin: 0px !important;
+}
+
+body>div{
+    color: black;
+    background-color: white;
+    width: 1265px;
+    margin: 0 auto;
+    border: 5px solid #000;
+    border-radius: 10px;
+    min-width: 20em;
+}
+
+.submit{
+    position: absolute;
+    top: 0px;
+    left: 42%;
+}
+
+.message{
+    //position: absolute;
+}
+
+main input{
+    opacity: .75;
+    max-width: 100%;
+}
+
+.character_sheet{
+    position: relative;
+    width: 1250px;
+    height: 1600px;
+}
+
+.character_sheet div{
+    position: absolute;
+}
+
+/*The Media Queries will make it change based on screen size*/
+@media screen and (max-width: 950px){
+    body>div{
+        width: 910px;
+    }
+
+    .character_sheet{
+        width: 900px;
+        height: 1155px;
+    }
+}
+
+main img{
+    width: 100%;
+    position: absolute;
+}
+
+.character_sheet input{
+    position: absolute;
+    /*visibility: hidden;*/
+}
+
+/*This will change the size of the checkboxes*/
+input[type=checkbox] {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+}
+
+.top_div{
+    width: 87%;
+    height: 10%;
+    top: 4%;
+    left: 7%;
+}
+
+.attributes{
+    top: 17%;
+    left: 5%;
+    width: 9%;
+    height: 55%;
+}
+
+.modifiers{
+    top: 23%;
+    left: 7%;
+    width: 5%;
+    height: 49%;
+}
+
+.inspiration_and_proficiency{
+    top: 16%;
+    left: 15%;
+    width: 5%;
+    height: 9%;
+}
+
+.has_boxes_div{
+    top: 26%;
+    left: 16%;
+    width: 2%;
+    height: 46%;
+}
+
+.throws_and_skills_div{
+    height: 47%;
+    width: 3%;
+    top: 25%;
+    left: 18%;
+}
+
+.proficiencies_div{
+    top: 79%;
+    left: 4%;
+    width: 30%;
+    height: 19%;
+}
+
+.attribute{
+    width: 70%;
+    left: 14%;
+    height: 6.5%;
+}
+
+.character_name{
+    top: 41%;
+    left: 3%;
+    width: 27%;
+    height: 22%;
+}
+.character_class{
+    top: 23%;
+    width: 15%;
+    left: 42.7%;
+    height: 20%;
+}
+
+.level{
+    top: 23%;
+    left: 57.7%;
+    width: 6%;
+    height: 20%;
+}
+
+.background{
+    top: 23%;
+    left: 63.7%;
+    width: 18%;
+    height: 20%;
+}
+
+.player_name{
+    top: 23%;
+    left: 81.7%;
+    width: 17%;
+    height: 20%;
+}
+
+.race{
+    top: 55%;
+    width: 21%;
+    left: 42.7%;
+    height: 20%;
+}
+
+.alignment{
+    top: 55%;
+    width: 18%;
+    left: 63.7%;
+    height: 20%;
+}
+
+.experience{
+    top: 55%;
+    width: 17%;
+    left: 81.7%;
+    height: 20%;
+}
+
+
+.strength{
+    top: 5%;
+}
+
+.dexterity{
+    top: 21.5%;
+}
+
+.constitution{
+    top: 38%;
+}
+
+.intelligence{
+    top: 54.5%;
+}
+
+.wisdom{
+    top: 71%;
+}
+
+.charisma{
+    top: 87.8%;
+}
+
+.modifier{
+    width: 59%;
+    left: 17%;
+    height: 3.3%;
+}
+
+.strength_modifier{
+    top: 1.6%;
+}
+
+.dexterity_modifier{
+    top: 20.4%;
+}
+
+.constitution_modifier{
+    top: 39%;
+}
+
+.intelligence_modifier{
+    top: 57.8%;
+}
+
+.wisdom_modifier{
+    top: 76.4%;
+}
+
+.charisma_modifier{
+    top: 94.9%;
+}
+
+.inspiration{
+    top: 5%;
+    left: 15%;
+    width: 72%;
+    height: 30%;
+}
+
+.proficiency_bonus{
+    top: 58%;
+    left: 20%;
+    width: 72%;
+    height: 30%;
+}
+
+.has_boxes{
+    left: 25%;
+}
+
+.has_strength_throw{
+    top: 1.2%;
+}
+
+.has_dexterity_throw{
+    top: 5%;
+}
+
+.has_constitution_throw{
+    top: 8.8%;
+}
+
+.has_intelligence_throw{
+    top: 12.5%;
+}
+
+.has_wisdom_throw{
+    top: 16.3%;
+}
+
+.has_charisma_throw{
+    top: 20%;
+}
+
+.has_acrobatics{
+    top: 33.2%;
+}
+
+.has_animal_handling{
+    top: 36.9%;
+}
+.has_arcana{
+    top: 40.6%;
+}
+.has_athletics{
+    top: 44.4%;
+}
+.has_deception{
+    top: 48.2%;
+}
+.has_history{
+    top: 51.9%;
+}
+.has_insight{
+    top: 55.6%;
+}
+.has_intimidation{
+    top: 59.5%;
+}
+.has_investigation{
+    top: 63.2%;
+}
+.has_medicine{
+    top: 66.8%;
+}
+.has_nature{
+    top: 70.6%;
+}
+.has_perception{
+    top: 74.4%;
+}
+.has_performance{
+    top: 78.1%;
+}
+.has_persuasion{
+    top: 81.9%;
+}
+.has_religion{
+    top: 85.6%;
+}
+.has_sleight_of_hand{
+    top: 89.4%;
+}
+.has_stealth{
+    top: 93.1%;
+}
+.has_survival{
+    top: 96.8%;
+}
+
+.throws_and_skills{
+    left: 5%;
+    width: 95%;
+    height: 3%;
+}
+
+.strength_throw_value{
+    top: 2.6%;
+}
+
+.dexterity_throw_value{
+    top: 6.3%;
+}
+
+.constitution_throw_value{
+    top: 10%;
+}
+
+.intelligence_throw_value{
+    top: 13.6%;
+}
+
+.wisdom_throw_value{
+    top: 17.4%;
+}
+
+.charisma_throw_value{
+    top: 21%;
+}
+
+.acrobatics_value{
+    top: 34%;
+}
+
+.animal_handling_value{
+    top: 37.7%;
+}
+
+.arcana_value{
+    top: 41.3%;
+}
+
+.athletics_value{
+    top: 45%;
+}
+
+.deception_value{
+    top: 48.7%;
+}
+
+.history_value{
+    top: 52.3%;
+}
+
+.insight_value{
+    top: 56%;
+}
+
+.intimidation_value{
+    top: 59.7%;
+}
+
+.investigation_value{
+    top: 63.4%;
+}
+
+.medicine_value{
+    top: 67%;
+}
+
+.nature_value{
+    top: 70.5%;
+}
+
+.perception_value{
+    top: 74.3%;
+}
+
+.performance_value{
+    top: 77.9%;
+}
+
+.persuasion_value{
+    top: 81.6%;
+}
+
+.religion_value{
+    top: 85.3%;
+}
+
+.sleight_of_hand_value{
+    top: 88.9%;
+}
+
+.stealth_value{
+    top: 92.6%;
+}
+
+.survival_value{
+    top: 96.2%;
+}
+
+.passive_wisdom_div{
+    width: 6%;
+    height: 5%;
+    top: 73.9%;
+    left: 4%;
+}
+
+.passive_wisdom{
+    width: 53%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+}
+
+.proficiencies{
+    position: absolute;
+    top: 4%;
+    opacity: 0.5;
+    left: 4%;
+    width: 93%;
+    height: 88%;
+    resize: none;
+}
+
+.top_middle_div{
+    width: 30%;
+    height: 31%;
+    top: 16%;
+    left: 35%;
+}
+
+.armor_class{
+    top: 7%;
+    left: 11%;
+    width: 14.5%;
+    height: 10%;
+}
+
+.initiative{
+    top: 6%;
+    left: 39%;
+    width: 19.5%;
+    height: 14%;
+}
+.speed{
+    top: 6%;
+    left: 71%;
+    width: 19.5%;
+    height: 14%;
+}
+.hit_points_maximum{
+    top: 29%;
+    left: 41%;
+    width: 51%;
+    height: 5%;
+}
+.hit_points_current{
+    top: 35%;
+    left: 8%;
+    height: 14%;
+    width: 84%;
+}
+.hit_points_temporary{
+    top: 56.5%;
+    left: 8%;
+    height: 14%;
+    width: 84%;
+}
+.hit_dice_total{
+    top: 80%;
+    left: 17%;
+    width: 27%;
+    height: 4%;
+}
+.hit_dice{
+    top: 85%;
+    left: 8%;
+    width: 36%;
+    height: 9%;
+}
+.death_save_success1{
+    top: 81.6%;
+    left: 72.5%;
+}
+.death_save_success2{
+    top: 81.6%;
+    left: 79.5%;
+}
+.death_save_success3{
+    top: 81.6%;
+    left: 86.5%;
+}
+.death_save_failure1{
+    top: 87.9%;
+    left: 72.5%;
+}
+.death_save_failure2{
+    top: 87.9%;
+    left: 79.5%;
+}
+.death_save_failure3{
+    top: 87.9%;
+    left: 86.5%;
+}
+
+.attack_div{
+top: 49%;
+left: 35%;
+width: 30%;
+height: 25%;
+}
+
+.attack_name_1{
+top: 4.5%;
+left: 5%;
+width: 34%;
+height: 7.5%;
+}
+.attack_bonus_1{
+top: 4.5%;
+width: 16%;
+height: 7.5%;
+left: 42.5%;
+}
+.attack_type_1{
+top: 4.5%;
+height: 7.5%;
+left: 62%;
+width: 32.5%;
+}
+.attack_name_2{
+top: 15%;
+left: 5%;
+width: 34%;
+height: 7.5%;
+}
+.attack_bonus_2{
+top: 15%;
+left: 42.5%;
+width: 16%;
+height: 7.5%;
+}
+.attack_type_2{
+top: 15%;
+left: 62%;
+width: 32.5%;
+height: 7.5%;
+}
+.attack_name_3{
+top: 25.5%;
+left: 5%;
+width: 34%;
+height: 7.5%;
+}
+.attack_bonus_3{
+top: 25.2%;
+width: 16%;
+height: 7.5%;
+left: 42.5%;
+}
+.attack_type_3{
+top: 25.5%;
+height: 7.5%;
+left: 62%;
+width: 32.5%;
+}
+.attack_other1{
+top: 38%;
+position: absolute;
+opacity: 0.5;
+left: 3%;
+resize: none;
+width: 94%;
+height: 57%;
+}
+
+.equipment_div{
+width: 30%;
+height: 22.6%;
+top: 75%;
+left: 35%;
+}
+
+.equipment_cp{
+top: 6.5%;
+left: 9%;
+height: 9%;
+width: 14.5%;
+}
+.equipment_sp{
+top: 21%;
+left: 9%;
+height: 9%;
+width: 14.5%;
+}
+.equipment_ep{
+top: 35.5%;
+left: 9%;
+height: 9%;
+width: 14.5%;
+}
+.equipment_gp{
+top: 50%;
+left: 9%;
+height: 9%;
+width: 14.5%;
+}
+.equipment_pp{
+top: 64.3%;
+left: 9%;
+height: 9%;
+width: 14.5%;
+}
+textArea{
+    position: absolute;
+    opacity: .5;
+    resize: none;
+}
+.equipment_other1{
+top: 1%;
+left: 28%;
+width: 69%;
+height: 75.5%;
+}
+.equipment_other2{
+top: 76.5%;
+left: 3%;
+width: 94%;
+height: 19%;
+}
+
+.top_right_div{
+width: 30%;
+height: 31%;
+top: 16%;
+left: 66%;
+}
+
+.personality_traits1{
+top: 4.5%;
+left: 6%;
+height: 21%;
+width: 87%;
+}
+
+.ideals1{
+top: 33.5%;
+left: 6%;
+height: 15.5%;
+width: 87%;
+}
+
+.bonds1{
+top: 56%;
+left: 6%;
+height: 15.5%;
+width: 87%;
+}
+
+.flaws1{
+top: 78.5%;
+left: 6%;
+height: 16%;
+width: 87%;
+}
+
+.features_div{
+width: 30%;
+height: 50%;
+top: 48.5%;
+left: 66%;
+}
+
+.features{
+top: 0%;
+left: 2%;
+width: 95%;
+height: 96%;
+}

@@ -1,0 +1,1 @@
+mysql -uharonez1_admin -ppenguin1 -Dtheredb5_magic
