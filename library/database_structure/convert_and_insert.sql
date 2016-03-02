@@ -3,12 +3,13 @@
  insert into sets
  (select 
   NULL
- ,nname
- ,ncode
- ,ncode_magiccards
- ,STR_TO_DATE(ndate, '%m/%Y')
+ ,Nname
+ ,Ncode
+ ,Ncode_magiccards
+ ,STR_TO_DATE(Ndate, '%m/%Y')
  from nsets 
  order by 5);
+ 
  
  insert into cards
 (select
@@ -29,4 +30,7 @@
 ,Nnumber
 ,Nruling
 ,Ncolor
+,null
+,null
+,null
 from ncards);

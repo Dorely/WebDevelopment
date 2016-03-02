@@ -22,7 +22,7 @@ Purpose    : Style The Character Sheet Form
 #diceArea{
     position: absolute;
     left: 50%;
-    //height: 50%;
+    /*height: 50%;*/
     width: 40%;
     border: black 5px;
     min-width: 300px;
@@ -129,7 +129,7 @@ header h1{
 }
 
 header td{
-    //width: 50%;
+    /*width: 50%;*/
 }
 
 header{
@@ -141,7 +141,7 @@ main{
 }
 main img{
     width: 1300px;
-    //visibility: hidden;
+    /*visibility: hidden;*/
     z-index: -1;
     position: relative;
 }
@@ -154,7 +154,7 @@ main img{
 }
 
 .message{
-    //position: absolute;
+    /*position: absolute;*/
 }
 
 input{

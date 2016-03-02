@@ -1,1 +1,1 @@
-mysql -uharonez1_admin -ppenguin1 -Dtheredb5_magic
+mysql -utheredb5_admin -pEngelska987123 -Dtheredb5_magic

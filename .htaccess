@@ -3,7 +3,7 @@ Options -Indexes
 
 RewriteEngine on
 #For production server
-RewriteCond %{HTTP_HOST} ^cit336.theredbard.com$ [NC,OR]
+RewriteCond %{HTTP_HOST} ^magic.theredbard.com$ [NC,OR]
 #For local development server
 RewriteCond %{HTTP_HOST} ^localhost$ [NC]
 #Send to the public folder

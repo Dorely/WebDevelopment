@@ -1,0 +1,1 @@
+mysqldump -utheredb5_admin -pEngelska987123 theredb5_magic > magicDump.sql

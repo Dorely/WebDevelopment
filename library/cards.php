@@ -110,6 +110,42 @@ function get_card($card_id) {
     return $results;
 }
 
+function get_cards_by_set_id($set_id) {
+    global $db;
+
+    $query = 'SELECT * FROM cards c inner join sets s using(set_id) where c.set_id = :set_id';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':set_id', $set_id);
+
+    try {
+        $statement->execute();
+    } catch (PDOException $ex) {
+        return false;
+    }
+    $results = $statement->fetchall();
+    $statement->closeCursor();
+
+    return $results;
+}
+
+function get_cards_by_name($name) {
+    global $db;
+
+    $query = 'SELECT * FROM cards c inner join sets s using(set_id) where c.card_name = :card_name';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':card_name', $name);
+
+    try {
+        $statement->execute();
+    } catch (PDOException $ex) {
+        return false;
+    }
+    $results = $statement->fetchall();
+    $statement->closeCursor();
+
+    return $results;
+}
+
 function get_card_details($card_name, $set_id, $variation = NULL) {
     global $db;
 
